@@ -69,6 +69,19 @@ Bamdra Loom 不是代码编辑器，也不是问答助手。它更像**你雇了
 
 应用启动时会检查更新。新版本可用时，TopBar 上会出现一个下载按钮。更新通道是签名的，只有来自本仓库的 release 才能安装。如果自动下载失败，会弹窗提示你——可以重试，也可以直接到 releases 页手动下载。
 
+## 发布通道
+
+两档通道，通过 tag 形态区分：
+
+| 通道 | tag 形态 | 自动更新 |
+|---|---|---|
+| **Stable** | `vX.Y.Z` | ✅ 推送给所有用户 |
+| **Beta** | `vX.Y.Z-beta.N` | ❌ 仅手动下载 |
+
+Stable 用户不会收到 beta 推送 —— GitHub 的 "latest" 自动忽略 prerelease，而 beta 构建也不会上传 updater manifest。想试 beta 直接到 [releases 页](https://github.com/bamdra/Loom/releases) 手动下载安装包。
+
+完整规范见 [RELEASE.md](RELEASE.md)。
+
 ## License
 
 [MIT](LICENSE) © Bamdra

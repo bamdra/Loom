@@ -69,6 +69,19 @@ The full walkthrough lives in [docs/en/01-quickstart.md](docs/en/01-quickstart.m
 
 The app checks for updates at startup. When one is available, a download button appears in the top bar. The update channel is signed — only releases from this repository can install. If a download fails, a dialog will offer to retry or open the releases page directly.
 
+## Release channels
+
+Two channels, distinguished by the tag form:
+
+| Channel | Tag form | Auto-update |
+|---|---|---|
+| **Stable** | `vX.Y.Z` | ✅ pushed to all users |
+| **Beta** | `vX.Y.Z-beta.N` | ❌ manual download only |
+
+Stable users never receive beta builds — GitHub's "latest" automatically skips prereleases, and beta builds intentionally do not publish the updater manifest. To try a beta, grab the installer from the [releases page](https://github.com/bamdra/Loom/releases) directly.
+
+Full conventions in [RELEASE.md](RELEASE.md).
+
 ## License
 
 [MIT](LICENSE) © Bamdra
