@@ -2,6 +2,10 @@
 
 Bilingual install guide for Bamdra Loom · 双语安装指南
 
+> **For everyone — no developer experience needed.** Once installed, see the
+> [quickstart in English](docs/en/01-quickstart.md) or [中文上手](docs/zh/01-quickstart.md)
+> for what to do next.
+
 ---
 
 ## English
@@ -54,9 +58,13 @@ sudo apt install libfuse2
 
 ### Updating
 
-The app checks for updates at startup. When one is available, a download button appears in the top bar. The update channel is signed — only releases from this repository can install.
+The app checks for updates at startup. When one is available, a download button appears in the top bar. The update channel is signed — only releases from this repository can install. If a download fails, a dialog will offer to retry or open the releases page directly.
 
 You can also manually download a newer installer and run it; settings and project state are preserved.
+
+### What to do after installing
+
+Open the [English quickstart](docs/en/01-quickstart.md) — five minutes, plain language, no jargon.
 
 ---
 
@@ -110,6 +118,10 @@ sudo apt install libfuse2
 
 ### 升级
 
-应用启动时会检查更新。新版本可用时，TopBar 上会出现一个下载按钮。更新通道是签名的，只有来自本仓库的 release 才能安装。
+应用启动时会检查更新。新版本可用时，TopBar 上会出现一个下载按钮。更新通道是签名的，只有来自本仓库的 release 才能安装。如果自动下载失败，会弹窗提示你——可以重试，也可以直接到 releases 页手动下载。
 
 也可以手动下载新版安装包覆盖安装，本机设置和项目状态都会保留。
+
+### 装好之后做什么
+
+打开[中文上手指南](docs/zh/01-quickstart.md)——五分钟，大白话，没有术语。

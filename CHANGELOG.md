@@ -4,6 +4,18 @@ All notable changes to Bamdra Loom are documented here.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/), and this project adheres to semantic versioning where practical.
 
+## v0.41.1 — 2026-04-28
+
+### Changed
+
+- In-app help docs (8 files, zh + en) rewritten end-to-end around the real product positioning: "tell Loom what you want — its AI team builds it; you don't write or read code." Removes prior framing that excluded zero-code users.
+- Public README (English + 简体中文) and INSTALL guide rewritten with the same framing; audience defaults to anyone, not just developers.
+- Help docs in `docs/zh/` and `docs/en/` are now mirrored from the in-app help by CI on each release (single source of truth).
+
+### Added
+
+- Auto-update failure dialog: if a download fails, the app now pops a clear dialog with retry, open-releases-page, and dismiss actions, plus a collapsible error detail.
+
 ## v0.40.0 — 2026-04-28
 
 ### Added
