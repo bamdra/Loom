@@ -96,3 +96,23 @@ If a round of changes turns out wrong — everything is on your machine, in your
 ### Setting up tools
 
 If it tells you *"I need X to keep going"* — you don't need to go look up how to install it. Just say: *"Walk me through installing it."* It will.
+
+---
+
+## ⚙️ Agent prompts per domain (advanced)
+
+Each agent role — Analysis, Design, Implement, Review — has a separate system prompt for **Product** mode and **Dev** mode. These prompts shape how each agent thinks about its job.
+
+Loom ships with defaults that work well out of the box. You can customize them if you want agents to follow your team's conventions, speak in a specific way, or focus on things the defaults don't cover.
+
+**Where to find them:** Settings (gear icon in the top bar) → **Agents** tab → click any role card → switch between **Product** and **Dev** tabs inside the card.
+
+**Reset:** Hit the reset button on any role to restore the built-in default for that domain.
+
+**When to customize:**
+- Your team has a house style you want agents to follow
+- You're using a specific framework and want agents to stay within it
+- You want the Review agent to apply your own rubric instead of the generic one
+
+Changes are saved per-project in `.vibeflow/orchestration.yaml`, so different projects can have different prompts.
+

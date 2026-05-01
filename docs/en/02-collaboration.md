@@ -80,3 +80,27 @@ You can see those files in the tree, but **you really don't need to open them**.
 ## I changed something myself — how do they know?
 
 If you went around the agents and edited the project yourself (changed a file, committed something on your own), hit the **Sync button** in the top bar. One agent will look at the current state and refresh the meeting notes. The team picks up next time knowing what you did.
+
+---
+
+## 🌐 Switching domains: Product vs Dev
+
+At the top of the Agents panel you'll see two buttons: **Product** and **Dev**. This is the FlowDomain switch.
+
+**Product** is for work that starts with a need and ends with something a person can see and touch — requirements, specs, wireframes, prototypes, design handoff.
+
+**Dev** is for work that starts with a spec or a bug and ends with verified, running code — stack detection, implementation planning, code writing, test verification.
+
+You can switch domains at any time. The switch is remembered across sessions.
+
+When you switch, each agent role (Analysis, Design, Implement, Review) automatically shifts its focus:
+
+| Role | Product mode | Dev mode |
+|------|-------------|---------|
+| **Analysis** | Clarify user goals, acceptance criteria, constraints | Triage request, identify affected modules, scope risk |
+| **Design** | Spec, page flows, component structure, data model sketch | Implementation plan, file-level breakdown, interface contracts |
+| **Implement** | Prototypes, HTML/CSS/JS, React components | Write or modify code, follow conventions, report changes |
+| **Review** | Completeness, visual fidelity, interaction correctness | Correctness, style, edge cases, security rubric |
+
+Most projects eventually use both — start in Product to figure out what to build, switch to Dev to actually build it.
+
