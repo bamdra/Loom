@@ -65,6 +65,13 @@ You only appear at two spots in this loop: **saying what you want**, and **looki
 - **Windows**: First launch may show SmartScreen — click "More info" → "Run anyway."
 - **Linux**: Double-click the AppImage or install the deb.
 
+<!-- screenshot: Loom main window after first launch -->
+
+Once you're in, you'll see the main window with your project tree on the left, agent panels in the center, and the intent box at the bottom. Two ways to start working:
+
+- **Full intent** — type what you want in the intent box and hit return. The team plans, builds, and delivers.
+- **Quick Task** — click the ⚡ button in the action bar (or press `Cmd+Shift+E` / `Ctrl+Shift+E`) for small, one-off jobs that don't need a full plan. See the Quick Task guide for details.
+
 If macOS says **"damaged"** instead of "unidentified," run this once in Terminal:
 
 ```

@@ -83,24 +83,14 @@ If you went around the agents and edited the project yourself (changed a file, c
 
 ---
 
-## 🌐 Switching domains: Product vs Dev
+## 🌐 Product vs Dev domains
 
-At the top of the Agents panel you'll see two buttons: **Product** and **Dev**. This is the FlowDomain switch.
+At the top of the Agents panel you'll see two buttons: **Product** and **Dev**. This switches how every agent thinks about its job.
 
-**Product** is for work that starts with a need and ends with something a person can see and touch — requirements, specs, wireframes, prototypes, design handoff.
+- **Product** — from need to something visible: specs, prototypes, design.
+- **Dev** — from spec to running code: implementation, tests, deployment.
 
-**Dev** is for work that starts with a spec or a bug and ends with verified, running code — stack detection, implementation planning, code writing, test verification.
+You can switch at any time; the choice is remembered across sessions. Most projects use both — start in Product to figure out *what* to build, switch to Dev to actually build it.
 
-You can switch domains at any time. The switch is remembered across sessions.
-
-When you switch, each agent role (Analysis, Design, Implement, Review) automatically shifts its focus:
-
-| Role | Product mode | Dev mode |
-|------|-------------|---------|
-| **Analysis** | Clarify user goals, acceptance criteria, constraints | Triage request, identify affected modules, scope risk |
-| **Design** | Spec, page flows, component structure, data model sketch | Implementation plan, file-level breakdown, interface contracts |
-| **Implement** | Prototypes, HTML/CSS/JS, React components | Write or modify code, follow conventions, report changes |
-| **Review** | Completeness, visual fidelity, interaction correctness | Correctness, style, edge cases, security rubric |
-
-Most projects eventually use both — start in Product to figure out what to build, switch to Dev to actually build it.
+For a deeper look at Product vs Dev domains, see the **Domains** guide.
 
